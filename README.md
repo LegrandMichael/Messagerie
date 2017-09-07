@@ -1,19 +1,33 @@
-# Service Shipping Project
+# Projet messagerie
 
-- Create database "messagerie" with necessary tables.
+- Travail en groupe de 2/3 pour la réalisation de la messagerie
 
-- Apart from the pages index.php and connexion.php all other pages are only accessible if the user is logged in (ie at least the session variable $ _SESSION ['users_id'] is set and contains a value).
+- Possibilité de se séparer le travail Vue(HTML)/Logique(PHP) ou de travailler en pair programming
 
-- Set up shipping service connection.
+- Les groupes sont envoyés sur slack
 
-- Creation of the repository with the following files:
+- Définition du modèle
 
-    - index.php : redirects to connect_shipping_service.php
-    - connect_shipping_service.php : affiche un formulaire pour se connecter
-    - disconnect.php : does not display anything, this page aims to destroy session variables and session and then redirects to connect_shipping_service.php
-    - users.php : displays the list of users with a button
-    - create_message.php?uti_id=1 :
-    creation of a message to the users_id 1
-    - sent_messages.php?uti_id=1 : displays all sent message by users_id 1
-    - received_messages.php?uti_id=1: displays all received message by users_id 1
-    - message.php?mes_id=1 : displays message mes_id=1
+    - Faire un Modèle Conceptuel de données pour la mise en oeuvre d'une messagerie. Deux entités nécessaires: utilisateur et message.
+
+    - En déduire le Modèle Physique des tables.
+
+    - Reprise de la modélisation au tableau afin d'être tous synchronisé sur une même base.
+
+    - Création d'une base de donnée "messagerie" avec les tables nécessaires.
+
+- Préalable à lire:
+    - Hormis les pages index.php et connexion.php toutes les autres pages ne sont accessible que si l'utilisateur est connecté ( c'est à dire qu'au moins la variable de session $_SESSION['uti_oid'] soit setté et contienne une valeur).
+
+- Pour la mise en place de la connexion vous pouvez vous inspirer du cours précédent et si non le formateur vous donnera des indications.
+
+- Création de votre repository avec les fichiers suivants
+
+    - index.php : redirige vers connexion.php
+    - connexion.php : affiche un formulaire pour se connecter
+    - deconnexion.php : n'affiche rien, cette page à pour but de détruire les variables de session et la session puis redirige vers connexion.php
+    - utilisateurs.php : affiche la liste des utilisateurs avec un bouton
+    - create_message.php?uti_oid=1 : création d'un message à destination de l'uti_oid 1
+    - sent_messages.php?uti_oid=1 : affiche tous les messages envoyé par l'uti_oid 1
+    - received_messages.php?uti_oid=1: affiche tous les messages reçus par l'uti_oid 1
+    - message.php?mes_oid=1 : affiche le message mes_oid=1
