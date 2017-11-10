@@ -7,11 +7,11 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
-<link rel="stylesheet" href="../../css/style.css">
-<title>Real Estate Carcassonne Agency</title>
+<link rel="stylesheet" href="../../css/style.css" type="text/css">
+<title>Messagerie</title>
 </head>
 <body>
-    <div class="container">
+    <div id="container" class="container">
         <div class="row">
             <div class="col-xs-12">
                 <?php include(__DIR__.'/header.php'); ?>
@@ -20,6 +20,11 @@
         <div class="row">
             <div class="col-xs-12">
             <?=$content?><br />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+            <?php include(__DIR__.'/footer.php'); ?><br />
             </div>
         </div>
     </div>
